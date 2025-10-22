@@ -1,0 +1,67 @@
+body{
+    background-color:hsl(229, 57%, 11%) ;
+    /* color: white; */
+      background-image: url("images/bg-desktop.png");
+}
+
+.card-left{
+    background-color:  hsl(228, 56%, 26%);
+    border-top-right-radius: 40px; 
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.icon-bo{
+    background-color: hsl(229, 57%, 11%);
+}
+
+.card-right{
+    background-color:  hsl(228, 56%, 26%);
+}
+
+p{
+     color: hsl(229, 7%, 55%)
+     
+}
+.progress{
+    background-color:hsl(229, 57%, 11%)
+}
+.progress-bar{
+background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+ border: 2px solid hsl(229, 57%, 11%)
+}
+/* 
+ .whiteknob{
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translate(50%, -50%);
+      width: 14px;
+      height: 14px;
+      background: white;
+      border-radius: 50%;
+    } */
+
+
+  .speech-bubble {
+  position: relative;
+  margin-bottom: 10px;
+  color: #000 !important;
+    border-bottom-right-radius: 0 !important;  /*  added — makes bottom-right corner square */
+
+}
+
+/* create right-handed upside-down triangle pointer */
+.speech-bubble::after {
+  content: "";
+  position: absolute;
+  right: -2px;          /* stick to right end */
+  bottom: -10px;        /* below the bubble */
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 0 solid transparent;
+   /* border-right: 14px solid transparent; */
+  border-top: 10px solid #f8f9fa; /* same as bg-light */
+}
