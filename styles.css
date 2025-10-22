@@ -52,16 +52,15 @@ background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
 
 }
 
-/* create right-handed upside-down triangle pointer */
+
+
 .speech-bubble::after {
   content: "";
   position: absolute;
-  right: -2px;          /* stick to right end */
-  bottom: -10px;        /* below the bubble */
+  bottom: -12px;                     /* slightly below the bubble */
+  right: 0;                          /*flush with right edge */
   width: 0;
   height: 0;
-  border-left: 10px solid transparent;
-  border-right: 0 solid transparent;
-   /* border-right: 14px solid transparent; */
-  border-top: 10px solid #f8f9fa; /* same as bg-light */
+  border-top: 14px solid #f8f9fa;    /* main color (bubble color) */
+  border-left: 14px solid transparent; /* wider base to make it right-handed */
 }
