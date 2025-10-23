@@ -15,14 +15,20 @@ body {
     border-bottom-left-radius: 4px;
     border-top-left-radius: 4px;
     border-bottom-right-radius: 4px;
-    width: 230px;
+    /* width: 230px; */
+          width: 20%; 
+    min-width: 200px;/* optional to prevent it from getting too small */
+
     height: 100%;
+
 }
 
 .card-right {
     background-color: hsl(228, 56%, 26%);
     border-radius: 12px;
-    width: 380px;
+    /* width: 380px; */
+    width: 30%;
+    /* min-width: 200px; */
     height: 100%;
 }
 
